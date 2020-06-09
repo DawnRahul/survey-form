@@ -1,0 +1,89 @@
+/* **************** TAG SELECTOR ************** */
+body {
+	color: white;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body::before {        /* for creating linear gradient effect layer over a background image*/
+	position: fixed; /* to make background image fixed at its position even on scrolling */
+	content:"";
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/*	background-color: rgba(0, 0, 200, 0.5); */
+	 background-image: linear-gradient(90deg, rgba(42, 62, 140,0.8), rgba(126, 171, 247,0.8)),
+			url("images/man-using-laptop.jpg");
+			
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 z-index: -1;
+}
+
+label {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom:  4px;
+}
+
+
+/* **************** ID SELECTOR ************** */
+#submit {
+	width: 100%;
+	margin: 30px auto 10px auto;
+	padding: 8px;
+	font-family: inherit;
+	font-weight: 900;
+	font-size: 18px;
+	background-image: radial-gradient(circle, rgba(251,172,0,1) 4%, rgba(250,249,153,1) 84%); 
+				/* with the help of cssgradient.io website */
+	color: #fbffad;	
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	
+}
+
+#suggestion {
+	font-family: inherit;
+	resize: none;
+	width: 98%
+}
+
+#survey-form {
+	background-color: rgba(29, 0, 73,0.8);
+	width: 480px;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: left;
+	padding: 40px;
+	border-radius: 6px;
+}
+
+#title {
+	font-weight: 900;
+}
+
+#description {
+	font-style: italic;
+	font-weight: 200;
+}
+
+/* **************** CLASS SELECTOR ************** */
+.form-inputs {
+	width: 100%;
+	padding: 4px;
+	border-radius: 5px;
+	border-style: none;
+	margin-top: 4px;
+	margin-bottom: 4px
+}
+.hint {
+	font-size: 12px;
+}
+.options {
+	margin-top: 1px;
+	margin-bottom: 2px;
+}

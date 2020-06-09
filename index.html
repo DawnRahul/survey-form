@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey Form</title>
+		<meta charset="UTF-8">
+		<link rel="Stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,200;1,400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		
+			<h1 id="title">DawnCoders Survey Form</h1>
+			<p id="description">Thank you for taking the time to help us
+			improve the platform</p>
+			
+			<!-- ************************FORM STARTS FROM HERE*********************************** -->
+			
+			<form id="survey-form">
+				<label for="name-label">Name</label><br>
+				<input  
+				    type="text"
+        			id="name-label" 
+					class="form-inputs"
+					name="name"
+					placeholder="Enter your name"
+					required /><br/>
+					
+				<label for="email-label">Email</label><br/>
+				<input
+					type="email"
+					id="email-label"
+					class="form-inputs"
+					name="email"
+					placeholder="Enter your Email"
+					required
+				/><br/>
+				
+				<label for="number-label">Age <span class="hint">(optional)</span></label><br/>
+				<input
+					type="number"
+					id="number-label"
+					class="form-inputs"
+					name="age"
+					placeholder="Age"
+					min="1" max="200"
+				/><br/>
+			
+				<label>Which option best describes your current role?</label><br/>
+				<select class="form-inputs" name="role">
+					<option selected disabled>Select current role</option>  <!-- It can't be selected -->
+					<option value="student">Student</option>
+					<option value="full-time-job">Full time job</option>
+					<option value="full-time-learner">Full time learner</option>
+					<option value="prefer-not-to-say">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select><br/>
+				
+				<label>Would you recommend dawnCoders to a friend?</label><br/>
+				<input
+				type="radio"
+				id="recommendation-1"
+				name="recommend"
+				value="definitely"
+				checked
+				/><label class="options" for="recommendation-1" >Definitely</label>  <!--with id and for attribute in input and label tag, respectively -->
+				<br/>
+				<input
+				type="radio"
+				id="recommendation-2"
+				name="recommend"
+				value="maybe"
+				/><label class="options" for="recommendation-2">Maybe</label>
+				<br/>
+				<input
+				type="radio"
+				id="recommendation-3"
+				name="recommend"
+				value="not-sure"
+				/><label class="options" for="recommendation-3">Not sure</label>
+				<br/>
+				
+				<label>What is your  favourite feature of dawnCoders?</label><br/>
+				<select id="dropdown" class="form-inputs">
+				<option selected disabled>Select an option</option>
+				<option value="">Challenges</option>
+				<option value="">Community</option>
+				<option value="">Projects</option>
+				<option value="">Open Source</option>
+				</select><br/>
+				
+				
+				<label>What would you like to see improved?<span class="hint">(Check all that apply)</span></label><br/>
+				<label class="options"><input 
+				type="checkbox"
+				name="subjects"
+				value="front-end-projects"
+				/>Front-end Projects</label><br/> <!--without id and for attribute in input and label tag, respectively -->
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="back-end-projects"
+				/>Back-end Projects</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="data-visualization"
+				/>Data Visualization</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="challenges"
+				/>Challenges</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="open-source-community"
+				/>Open Source Community</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="gitter-help-rooms"
+				/>Gitter help rooms</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="videos"
+				/>Videos</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="city-meetups"
+				/>City Meetups</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="wiki"
+				/>wiki</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="forum"
+				/>Forum</label><br/>
+				
+				<label class="options"><input
+				type="checkbox"
+				name="subjects"
+				value="additional-courses"
+				/>Additional Courses</label><br/>
+				
+				
+				<label for="suggestion">Any comments or suggestions?</label><br/>
+				<textarea				
+				id="suggestion"
+				class="form-inputs"
+				name="suggestion"
+				placeholder="Enter your comment here..."
+				class="form-inputs"
+				rows="7"
+				/></textarea><!-- cols="40" **i have used withd="100%" instead  *** -->
+				<br/>
+				<button id="submit" type="submit">Submit</button>
+			</form>
+			
+			<!-- ************************FORM ENDS HERE*********************************** -->
+			
+	</body>
+</html>
