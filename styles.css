@@ -1,4 +1,4 @@
-/* **************** TAG SELECTOR ************** */
+/* **************** TAG SELECTORs ************** */
 body {
 	color: white;
 	text-align: center;
@@ -29,7 +29,7 @@ label {
 }
 
 
-/* **************** ID SELECTOR ************** */
+/* **************** ID SELECTORs ************** */
 #submit {
 	width: 100%;
 	margin: 30px auto 10px auto;
@@ -71,7 +71,7 @@ label {
 	font-weight: 200;
 }
 
-/* **************** CLASS SELECTOR ************** */
+/* **************** CLASS SELECTORs ************** */
 .form-inputs {
 	width: 100%;
 	padding: 4px;
@@ -86,4 +86,51 @@ label {
 .options {
 	margin-top: 1px;
 	margin-bottom: 2px;
+}
+
+/* ******************************************* */
+/* **************** MEDIA QUERY ************** */
+/* ******************************************* */
+
+@media screen and (max-width: 61.25rem){
+	
+	/* **************** TAG SELECTORs ************** */
+	label {
+	margin-top: 40px;
+	margin-bottom:  10px;
+	}
+	body {
+		margin: 16px;
+	}
+	/* **************** ID SELECTORs ************** */
+	#description {
+		font-size: 28px;
+	}
+	#title {
+		font-size: 62px;
+	}
+	#submit {
+	font-size: 42px;
+	padding: 16px;
+	}
+	#survey-form {
+		width: 80%;
+		font-size: 40px;
+	}
+	
+	/* **************** CLASS SELECTORs ************** */
+	.hint {
+	font-size: 24px;
+	}
+	.form-inputs {
+	font-size: 36px;
+	padding: 8px;
+	}
+	.radio-checkbox-btn-size {
+	width: 28px;
+    height: 28px;	
+	}
+	
+	
+	
 }
