@@ -92,43 +92,49 @@ label {
 /* **************** MEDIA QUERY ************** */
 /* ******************************************* */
 
-@media screen and (max-width: 61.25rem){
+@viewport {
+	width: device-width;
+	zoom: 1.0;
+}
+
+@media screen and (max-width: 480px){
 	
 	/* **************** TAG SELECTORs ************** */
 	label {
-	margin-top: 40px;
-	margin-bottom:  10px;
+	margin-top: 10px;
+	margin-bottom:  2.5px;
 	}
 	body {
-		margin: 16px;
+		margin: 4px;
 	}
 	/* **************** ID SELECTORs ************** */
 	#description {
-		font-size: 28px;
+		font-size: 7px;
 	}
 	#title {
-		font-size: 62px;
+		font-size: 15.5px;
 	}
 	#submit {
-	font-size: 42px;
-	padding: 16px;
+	font-size: 10.5px;
+	padding: 4px;
 	}
 	#survey-form {
 		width: 80%;
-		font-size: 40px;
+		font-size: 10px;
+		padding: 10px;
 	}
 	
 	/* **************** CLASS SELECTORs ************** */
 	.hint {
-	font-size: 24px;
+	font-size: 6px;
 	}
 	.form-inputs {
-	font-size: 36px;
-	padding: 8px;
+	font-size: 9px;
+	padding: 2px;
 	}
 	.radio-checkbox-btn-size {
-	width: 28px;
-    height: 28px;	
+	width: 7px;
+    height: 7px;	
 	}
 	
 	
